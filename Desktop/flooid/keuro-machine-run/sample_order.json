@@ -1,0 +1,111 @@
+{
+
+    "input": {
+        "batch_no": 1,
+        "order_group_ids": [], // all the group id loading in that particular batch
+        "Unique_Medicines": [101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116],
+        "Quantity": [30, 40, 10, 20, 25, 10, 30, 20, 50, 40, 10, 20, 15, 25, 30, 20],
+        "load_plan": 0,
+        "load_state": true,
+        "run_state": false
+    },
+    "state": {
+        "load": {
+            "cont_1": "D1.1",
+            "cont_2": "D2.1",
+            "cont_991": "D1.4",
+            "cont_41": "D2.6",
+            "cont_12": "D2.4",
+            "cont_411": "D1.5"
+        },
+        {
+            "unload": {
+                ["cont_1 , 1 , D1.1"],
+                ["cont_2 , 1 , D2.1"]
+            }
+        }
+    },
+    "state": {
+        "position": { // value represent rotate to position in turnstile
+            "D1": "D1.1",
+            "D2": "D2.1",
+            "D3": "D1.4",
+            "D4": "D2.6",
+            "D5": "D2.4",
+            "D6": "D1.5"
+        }
+    },
+    "state": {
+        "start_order": 771,
+    },
+    "state": {
+        "start_pouch": {
+            "seq_id": 1,
+            "pouch_id": 1,
+            "print_image_data": "base64bitmap"
+        }
+    },
+    "state": {
+        "dispense": {
+            "pouch_id": 1,
+            "dispenser_addresses": ["D1.1", "D2.1", "D1.4"]
+        }
+    },
+    "state": {
+        "seal": {
+            "seq_id": 1,
+            "pouch_id": 1,
+        },
+    }
+
+    //second pouch
+    "state": {
+        "start_pouch": {
+            "seq_id": 1,
+            "pouch_id": 2,
+            "print_image_data": "base64bitmap"
+        }
+    },
+    "state": {
+        "pouch_id": 2,
+        "dispenser_adresses": ["D2.6"]
+    },
+    "state": {
+        "seal": {
+            "seq_id": 1,
+            "pouch_id": 2,
+        },
+    },
+
+    //pouch 3
+    "state": {
+        "start_pouch": {
+            "seq_id": 1,
+            "pouch_id": 2,
+            "print_image_data": "base64bitmap"
+        }
+    },
+    "state": {
+        "dispense": {
+            "pouch_id": 3,
+            "dispenser_adresses": ["D2.4", "D1.5"]
+        }
+    },
+    "state": {
+        "seal": {
+            "seq_id": 1,
+            "pouch_id": 3,
+        },
+    },
+    "state": {
+        "end_order": 771
+    }
+}
+
+
+
+//dispenser-1
+
+// 6 containers ( )
+
+// 6 unique

@@ -1,0 +1,31 @@
+{
+    "input": {},
+    "state": {
+        "load": {
+            "container_id": "dispenser_slot_id"
+        },
+        "position": { // value represent rotate to position in turnstile
+            "D1": "D1.1",
+            "D2": "D2.1",
+            "D3": "D1.1",
+            "D4": "D1.1",
+            "D5": "D1.1",
+            "D6": "D6.3"
+        },
+        "start_order": "order_id",
+        "start_pouch": {
+            "seq_id",
+            "pouch_id",
+            "print_image_data"
+        },
+        "dispense": {
+            "pouch_id": "dispenser_address",
+            "dispenser_adresses": ["D2.4", "D1.5"]
+        },
+        "seal": {
+            "seq_id",
+            "pouch_id"
+        },
+        "end_order": "order_id"
+    }
+}
